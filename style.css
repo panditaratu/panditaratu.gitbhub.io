@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  background-color: gray;
+}
+
+h2,
+h3 {
+  color: #042f38;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgb(172, 33, 226);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.gambar-artikel {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gambar-dokumentasi {
+  width: 50%;
+  max-height: 500px;
+  object-position: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0px 4px 8px rgba(80, 49, 87, 0.267);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgb(138, 128, 115);
+}
+
+.jumbotron {
+  font-size: 20px;
+  background-color: rgb(150, 45, 136);
+  text-align: center;
+  color: white;
+  padding: 60px;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: rgb(180, 17, 118);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  opacity: 0.5;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+#content {
+  flex-grow: 6;
+}
+
+aside {
+  flex-grow: 1;
+  margin: auto;
+}
+
+/* untuk hp  */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main {
+    flex-direction: column;
+  }
+  nav {
+    text-align: center;
+  }
+  aside {
+    text-align: center;
+  }
+}
+
+/* untuk tablet  */
+@media screen and (min-width: 860px) and (max-width: 1020px) {
+  main {
+    flex-direction: column;
+  }
+  nav {
+    text-align: center;
+  }
+  aside {
+    text-align: center;
+  }
+}
